@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Graphical Art</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #202731;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .clickable-text {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        svg {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="clickable-text">Home</a>
+        <a href="css.html" class="clickable-text">CSS</a>
+        <a href="canvas.html" class="clickable-text">Canvas</a>
+        <a href="svg.html" class="clickable-text">SVG</a>
+        <a href="about.html" class="clickable-text">About the author</a>
+    </nav>
+
+    <svg width="200" height="300" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- Background -->
+        <rect width="200" height="300" fill="lightgrey"/>
+
+        <!-- Sun -->
+        <circle cx="180" cy="20" r="15" fill="yellow"/>
+
+        <!-- Grass -->
+        <rect x="0" y="250" width="200" height="50" fill="green"/>
+
+        <!-- House -->
+        <rect x="25" y="100" width="150" height="150" fill="blue"/>
+        <polygon points="25,100 100,25 175,100" fill="darkred"/>
+
+        <!-- Door -->
+        <rect x="90" y="175" width="20" height="50" fill="brown"/>
+        <circle cx="100" cy="200" r="2" fill="black"/>
+
+        <!-- Window -->
+        <rect x="65" y="125" width="20" height="20" fill="yellow"/>
+        <line x1="75" y1="135" x2="75" y2="145" stroke="black"/>
+        <line x1="65" y1="140" x2="85" y2="140" stroke="black"/>
+
+        <!-- Tree -->
+        <rect x="20" y="130" width="20" height="50" fill="brown"/>
+        <circle cx="30" cy="110" r="25" fill="green"/>
+
+    </svg>
+</body>
+</html>
